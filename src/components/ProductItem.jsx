@@ -1,6 +1,7 @@
 import React from 'react'
 import { toast } from 'react-toastify';
 import { useDispatch } from 'react-redux'
+
 import { Link } from 'react-router-dom'
 import { addItemToCart } from '../store/cartSlice';
 const ProductItem = ({ product }) => {
