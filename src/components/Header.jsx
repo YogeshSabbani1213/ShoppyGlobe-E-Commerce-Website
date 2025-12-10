@@ -12,6 +12,7 @@ function Header() {
     const query = useSelector((state) => state.search.query);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+    
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(prev => !prev);
     };
