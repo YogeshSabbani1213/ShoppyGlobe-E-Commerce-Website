@@ -1,0 +1,116 @@
+
+.sg-footer {
+  position: relative;
+  bottom: 0;
+  background: #e3f8e5;          /* soft green like your example */
+  padding: 3rem 0 1.5rem;
+  margin-top: 4rem;
+  font-size: 0.95rem;
+  color: #111827;
+}
+
+.sg-footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+/* Brand block */
+.sg-footer-brand {
+  flex: 1.5;
+  min-width: 260px;
+  max-width: 420px;
+}
+
+.sg-footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.sg-logo-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  background: #22c55e;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.sg-logo-text {
+  letter-spacing: 0.02em;
+}
+
+.sg-footer-text {
+  margin: 0;
+  line-height: 1.6;
+  color: #374151;
+}
+
+/* Columns */
+.sg-footer-col {
+  flex: 1;
+  min-width: 160px;
+}
+
+.sg-footer-title {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.sg-footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sg-footer-list li + li {
+  margin-top: 0.4rem;
+}
+
+.sg-footer-list a {
+  text-decoration: none;
+  color: #374151;
+}
+
+.sg-footer-list a:hover {
+  text-decoration: underline;
+}
+
+/* Divider + bottom line */
+.sg-footer-divider {
+  max-width: 1200px;
+  margin: 2.25rem auto 1rem;
+  height: 1px;
+  background: rgba(15, 23, 42, 0.08);
+}
+
+.sg-footer-bottom {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+/* Basic responsiveness */
+@media (max-width: 768px) {
+  .sg-footer {
+    padding: 2.5rem 0 1.25rem;
+  }
+
+  .sg-footer-inner {
+    gap: 2rem;
+  }
+}

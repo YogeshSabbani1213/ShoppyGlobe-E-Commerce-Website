@@ -1,0 +1,237 @@
+
+/* default: keep mobile things hidden on desktop */
+.mobileIcons,
+.mobileMenu {
+  display: none;
+}
+
+/* =========================================
+   MOBILE HEADER WITH DROPDOWN MENU
+========================================= */
+@media (max-width: 480px) {
+  .Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    position: relative;
+  }
+
+  .Header h1 {
+    font-size: 1.35rem;
+  }
+
+  /* hide old desktop nav + search */
+  .list1 {
+    display: none !important;
+  }
+
+  /* cancel previous pseudo hamburger / cart positioning if any */
+  .Header::after {
+    content: none !important;
+  }
+  .Header a:last-child {
+    position: static !important;
+    transform: none !important;
+  }
+
+  /* ------- top-right icons ------- */
+  .mobileIcons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: auto;
+  }
+
+  .mobileCart {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .mobileCart .cart-img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .mobileCart span {
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    background: #2563EB;
+    color: #fff;
+    font-size: 11px;
+    padding: 2px 6px;
+    border-radius: 999px;
+    font-weight: 600;
+  }
+
+  /* ------- hamburger button ------- */
+  .hamburgerBtn {
+    border: none;
+    background: #2563EB;
+    width: 32px;
+    height: 24px;
+    border-radius: 4px;
+    padding: 4px 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  .hamburgerBtn span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+    border-radius: 999px;
+  }
+
+  /* ------- dropdown menu ------- */
+  .mobileMenu {
+    display: none;
+    padding: 10px 18px 16px;
+    background: #ffffff;
+  }
+
+  .mobileMenu.open {
+    display: block;
+  }
+
+  .mobileMenu a {
+    display: block;
+    margin-bottom: 8px;
+    text-decoration: none;
+    color: #222;
+    font-size: 0.95rem;
+  }
+
+  .mobileMenu a:last-child {
+    margin-bottom: 0;
+  }
+}
+/* =========================================
+   FIX HERO SECTION FOR SMALL SCREENS
+   ========================================= */
+@media (max-width: 480px) {
+  .heroSection {
+    padding: 16px 18px 20px;
+  }
+
+  .heroContent {
+    max-width: 100%;
+    margin: 0 auto;
+    /* make it behave like a simple block again */
+    display: block;
+  }
+
+  .heroImgSection {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .heroImg {
+    width: 100px;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+  }
+
+  /* put buttons BELOW the image, not on top of it */
+  .heroButtons {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: static !important;   /* kill any old absolute/relative tricks */
+  }
+
+  .shopBtn,
+  .exploreBtn {
+    flex: 1;
+    width: auto;
+    padding: 6px 0;
+    font-size: 0.85rem;
+    border-radius: 999px;
+    position: static !important;   /* make sure they aren't overlayed */
+  }
+
+  .shopBtn {
+    background: #2563eb;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+  }
+
+  .exploreBtn {
+    background: #ffffff;
+    color: #2563eb;
+    border: 1px solid #2563eb;
+    font-weight: 500;
+  }
+}
+/* =============================
+   Best Sellers – 2 columns grid on mobile
+============================= */
+@media(max-width: 480px){
+
+  .bestSellersSection{
+    padding: 10px 14px;
+  }
+
+  .bestSellersSection h2{
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+
+  /* convert product list to 2 columns */
+  /* .productsRow{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  } */
+
+  .ProductsCard{
+    padding: 10px;
+    border-radius: 12px;
+    width: 100%;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+  }
+
+  .ProductsCard img{
+    width: 100%;
+    height: 140px;             /* adjustable */
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  /* reduce text & button size for better fitting */
+  .productTitle{
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .productPrice{
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .actinProduct{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .btnDetails,
+  .btnCart{
+    padding: 6px 0;
+    font-size: 12px;
+    width: 100%;
+    border-radius: 8px;
+  }
+}
+
+
+
+
