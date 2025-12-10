@@ -4,6 +4,7 @@ import ProductItem from "../components/ProductItem";
 import { useSelector } from "react-redux";
 
 
+
 function ProductList() {
     const { products, loading, error } = Products();
     let query = useSelector((state) => state.search.query)
