@@ -1,3 +1,6 @@
+# Git Hub link: 'https://github.com/YogeshSabbani1213'
+
+
 # 🛍 ShoppyGlobe - E-Commerce Web Application
 
 ShoppyGlobe is a responsive e-commerce web app built using **React + Vite + Redux Toolkit + React Router Dom**.  
@@ -49,7 +52,7 @@ It allows users to browse products, view details, add items to cart, manage quan
 Clone the repo:
 
 ```bash
-git clone https://github.com/your-username/ShoppyGlobe.git
+git clone https://github.com/YogeshSabbani1213/ShoppyGlobe.git
 cd ShoppyGlobe
 
 
